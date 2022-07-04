@@ -25,6 +25,7 @@ const baseURL = 'https://api.github.com/users/euFilpeSilva/repos'
       <ul>
         { repositories.map(repo => (
         <li key={repo.id}>{repo.name}
+        {repo.favorite && <span>(FAVORITO)</span>}
         <button onClick={() => handleFavorite(repo.id)}>Favoritar</button>
         </li>
         )) }
