@@ -10,7 +10,13 @@ const baseURL = 'https://api.github.com/users/euFilpeSilva/repos'
     axios.get(baseURL).then((response) => {
       setRepositories(response.data)
     });
-  },[]);
+  },[]);// usse useEffect vai disparar somente uma vez, pois não especifica nada alem de um array vazio como segundo paramentro
+
+  useEffect(() => {
+    const filtered = repositories.filter(repo => repo.favorite); //filtra os repositorios que tem a propriedade favorito
+
+    document.title = `Você tem ${filtered.lenght} favoritos`//exibindo total de repositorios na aba
+  }, [repositories])// Toda vez que a propriedade (repositories) mudar essse useEffect vai disparar.
 
   function handleFavorite(id) {
     const newRepositories = repositories.map(repo => {
