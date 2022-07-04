@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import './App.css';
 
 export default function App() {
 const [repositories, setRepositories] = useState([]);
@@ -28,14 +29,18 @@ const baseURL = 'https://api.github.com/users/euFilpeSilva/repos'
 
 
   return (
-      <ul>
+    <div id='emProlTitle'>
+     <p id='titulo'>MEUS - REPOSITÓRIOS</p>
+     <div id='linha'>.</div>
+    <ul className='repos'>
         { repositories.map(repo => (
-        <li key={repo.id}>{repo.name}
+          <li key={repo.id} className='card'><strong>{repo.name}</strong>
         {repo.favorite && <span>(FAVORITO)</span>}
-        <button onClick={() => handleFavorite(repo.id)}>Favoritar</button>
+        <button onClick={() => handleFavorite(repo.id)} size={10} >Favoritar</button>
         </li>
         )) }
       </ul>
+      </div>
   );
 }
 

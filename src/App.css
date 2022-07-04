@@ -1,0 +1,59 @@
+.card {
+    border-left: 1px solid #3659;
+    border-radius: 0 0 5px 0;
+    margin: 15px 50px 35px;
+    border-bottom: 2px solid #3659;
+    width: 18rem;
+    height: 80px;
+    background: black;
+    align-itens:center;
+    justify-content:center;
+    text-align:center;
+    padding: 1px;
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card button{
+    border-radius:100px;
+    border:0;
+    width: 6rem;
+    margin:15px 100px 30px;
+    font-size:18px;
+    padding:1px;
+}
+
+.repos {
+    list-style:none;
+    display:flex;
+    flex-wrap: wrap;
+    align-itens:center;
+    justify-content:center;
+    color: #ffff;
+    margin-top: 10rem;
+}
+
+#titulo {
+    color:#ffff;
+    widith: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 50px;
+    margin-bottom:5rem;
+    border-bottom: 1rem;
+    border-color: #ffff;
+}
+
+#linha {
+    background: #3659;
+    widith:55px;
+    height:1px;
+    padding:0;
+    margin-bottom:-5rem
+}
+
+
+
