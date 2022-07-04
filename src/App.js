@@ -12,10 +12,21 @@ const baseURL = 'https://api.github.com/users/euFilpeSilva/repos'
     });
   },[]);
 
+  function handleFavorite(id) {
+    const newRepositories = repositories.map(repo => {
+      return repo.id === id ? {...repo, favorite: true} : repo
+    }); //Atualiza o estado dos repositorios
+
+    setRepositories(newRepositories)
+  }
+
+
   return (
       <ul>
         { repositories.map(repo => (
-        <li key={repo.id}>{repo.name}</li>
+        <li key={repo.id}>{repo.name}
+        <button onClick={() => handleFavorite(repo.id)}>Favoritar</button>
+        </li>
         )) }
       </ul>
   );
