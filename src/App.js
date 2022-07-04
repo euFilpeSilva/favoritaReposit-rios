@@ -14,7 +14,7 @@ const baseURL = 'https://api.github.com/users/euFilpeSilva/repos'
 
   function handleFavorite(id) {
     const newRepositories = repositories.map(repo => {
-      return repo.id === id ? {...repo, favorite: true} : repo
+      return repo.id === id ? {...repo, favorite: !repo.favorite } : repo
     }); //Atualiza o estado dos repositorios
 
     setRepositories(newRepositories)
