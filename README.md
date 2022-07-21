@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## Projeto em processo de desenvolvimento, em alguns dias serão inseridos mais detalhes sobre o andamento do projeto aqui, tais como; imagens, gifs, videos, tecnologias/libs utilizadas....
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
