@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## Projeto em desenvolvimento tecnologias/libs utilizadas....
+## Projeto em desenvolvimento
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
